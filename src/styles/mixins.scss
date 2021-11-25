@@ -1,0 +1,22 @@
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+@mixin for-fonts {
+  font-family: 'Monsterrat', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+}
+
+@mixin transition {
+  transition: all ease-in-out 0.5s;
+}

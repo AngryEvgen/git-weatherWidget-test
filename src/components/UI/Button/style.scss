@@ -1,0 +1,23 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.button-default {
+  @include transition;
+  width: 87px;
+  height: 57px;
+  background: transparent;
+  border: 1px solid #d5d5d5;
+  border-radius: 20px;
+  padding: 0;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    margin-right: 5px;
+  }
+
+  &:hover {
+    background: $buttonBgColor;
+    color: $buttonFontColor;
+    filter: $buttonShadow;
+  }
+}

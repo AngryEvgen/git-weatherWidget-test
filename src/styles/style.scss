@@ -1,0 +1,54 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+* {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+body {
+  background: #525050;
+}
+
+.weather {
+  @include flex-column;
+  @include for-fonts;
+  background: $bgColor;
+  max-width: $weatherWidth;
+  border-radius: $weatherBorderRadius;
+  margin: 0 auto;
+  overflow: hidden;
+
+  &__today {
+    font-size: 14px;
+    line-height: 17px;
+    color: $titleFontColor;
+    margin-top: 86px;
+  }
+
+  &__name {
+    font-size: 40px;
+    line-height: 49px;
+    font-weight: bold;
+    color: $titleFontColor;
+  }
+}
+
+.wind {
+  @include flex-column;
+  @include for-fonts;
+  margin-top: 40px;
+  color: $titleFontColor;
+
+  &__title {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__value {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 8px;
+  }
+}

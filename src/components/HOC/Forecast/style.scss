@@ -1,0 +1,32 @@
+@import '/src/styles/variables.scss';
+@import '/src/styles/mixins.scss';
+
+.forecast {
+  margin-top: 90px;
+  background: $forecastBgColor;
+  width: $forecastWidth;
+  border-radius: $forecastBorderRadius;
+  padding: $forecastPadding;
+
+  &__buttons {
+    @include flex-center;
+    flex: 1;
+  }
+
+  &__title {
+    @include for-fonts;
+    margin-top: 26px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__dayli {
+    @include for-fonts;
+    @include flex-center;
+    flex-wrap: wrap;
+    flex: 1;
+    margin-top: 21px;
+  }
+}
