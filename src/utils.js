@@ -8,9 +8,9 @@ export const checkTodayDate = (str, todayDate) => {
   let date = new Date(correctStr);
 
   if (
-    date.getFullYear() == todayDate.getFullYear() &&
-    date.getMonth() == todayDate.getMonth() &&
-    date.getDate() == todayDate.getDate()
+    date.getFullYear() === todayDate.getFullYear() &&
+    date.getMonth() === todayDate.getMonth() &&
+    date.getDate() === todayDate.getDate()
   ) {
     return true;
   }
